@@ -1,0 +1,226 @@
+.matches-card {
+  margin: 20px 0px 10px 0px !important;
+}
+.card-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.matches-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0% 30%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.user-btn {
+  border: 1px solid #2b5caa;
+  padding: 6px 20px;
+  border-radius: 5px;
+  background-color: #2b5caa;
+  color: #fff;
+  box-shadow: -1px 1px 5px #999;
+  margin: 20px;
+}
+/* profile card */
+.half-float img.profile-background {
+  width: 100%;
+  height: 150px;
+}
+.half-float-bottom img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+.widget .panel,
+.widget.panel {
+  overflow: hidden;
+}
+
+.widget {
+  margin-bottom: 20px;
+  border: 0;
+  box-shadow: 0px 0px 6px 3px #cccc;
+}
+
+.bg-gray-darker {
+  background-color: #232735;
+  color: #fff !important;
+}
+
+.half-float {
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.half-float .half-float-bottom,
+.half-float .half-float-top {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+  z-index: 2;
+}
+
+.thumb128 {
+  width: 128px !important;
+  height: 128px !important;
+}
+
+.half-float + * {
+  margin-top: -55px;
+  padding-top: 65px;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.bg-gray-dark {
+  background-color: #3a3f51;
+  color: #fff !important;
+}
+
+.row-table {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.row-table > [class*="col-"] {
+  display: table-cell;
+  float: none;
+  table-layout: fixed;
+  vertical-align: middle;
+}
+.profile-footer {
+  padding: 25px 0px;
+  background-color: #f8f8f8;
+}
+/*  set profile img css*/
+/* sign up form */
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+.sign-in-form-detail {
+  height: 450px;
+  padding: 15px !important;
+}
+
+.sign-up-form-detail {
+  height: 570px;
+  padding: 15px !important;
+}
+.form-banner {
+  width: 100%;
+  height: 100%;
+  /* height: 528px; */
+  object-fit: cover;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.sign-up-form {
+  box-shadow: 0px 2px 5px 2px #cccc;
+  border-radius: 5px;
+}
+
+.sign-up-form-detail .form-heading {
+  margin-bottom: 26px;
+}
+.form-control {
+  padding: 5px !important;
+  margin-bottom: 10px;
+}
+.form-control:focus {
+  border-color: #ffc107 !important;
+}
+.form-check-input:checked {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+}
+.form-control:focus,
+.form-check-input:focus,
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none !important;
+}
+/* login */
+.sign-in-form-fields {
+  transform: translate(0px, 35%);
+}
+/* about */
+.about-profile-img {
+  width: 120px;
+  padding: 10px;
+}
+.user-detail-list {
+  padding: 20px;
+}
+.user-detail-list .table tr:last-child td {
+  border: none !important;
+}
+/* update profile img */
+.change-profile {
+  left: 48% !important;
+  width: 150px !important;
+}
+/*  */
+
+.profile-pic {
+  color: transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.profile-pic input {
+  display: none;
+}
+.profile-pic img {
+  position: absolute;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35); */
+  border-radius: 100px;
+  z-index: 0;
+}
+.profile-pic .-label {
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+}
+.profile-pic:hover .-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  color: #fafafa;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 100px;
+  margin-bottom: 0;
+  border: 5px solid #fff;
+}
+.profile-pic span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+}
+
+.about-content-right-sec{
+height: 400px;
+padding: 10px;
+}
