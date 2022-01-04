@@ -1,1 +1,1 @@
-module.exports.APIURL = "http://localhost:3003";
+module.exports.APIURL = "https://wheresinglesmingle-backend.herokuapp.com";
