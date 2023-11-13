@@ -3,6 +3,9 @@ import { APIURL } from '../../config';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import lovebg from '../../assets/images/lovebg.jpg';
+// import dotenv from 'dotenv'; 
+// dotenv.config();
+
 
 const SignUp = (props) => {
   console.log("props", props);
@@ -29,7 +32,7 @@ const SignUp = (props) => {
         redirect: 'follow',
         body
       };
-      fetch(`${APIURL}/api/register`, requestOptions)
+      fetch(`${process.env.REACT_APIURL}/api/register`, requestOptions)
         .then(response => response.json())
         .then(result => {
           if (result.error) {

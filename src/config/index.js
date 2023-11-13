@@ -1,1 +1,1 @@
-module.exports.APIURL = "https://wheresinglesmingle-backend.herokuapp.com";
+module.exports.APIURL = "https://wheresinglesmeetbackend1.onrender.com";
