@@ -32,13 +32,19 @@ const SignUp = (props) => {
         redirect: 'follow',
         body
       };
-      fetch(`${process.env.REACT_APIURL}/api/register`, requestOptions)
+      console.log(process.env.REACT_APP_APIURI)
+      fetch(`${process.env.REACT_APP_APIURI}/api/register`, requestOptions)
         .then(response => response.json())
         .then(result => {
           if (result.error) {
             toast.error(result.msg)
           } else {
             toast.success(result.msg);
+            const token = result.data.access_token;
+            localStorage.setItem("token", token);
+            setTimeout(() => {
+              window.location.href = "/dashboard";
+            }, 1000);
           }
         })
         .catch(error => {

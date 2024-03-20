@@ -1,5 +1,4 @@
 import React from "react";
-import { APIURL } from '../config';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import avatar from '../assets/images/avatar.png';
@@ -21,7 +20,7 @@ const UserProfileCard = (props) => {
       redirect: 'follow',
       body
     };
-    fetch(`${APIURL}/api/user/like`, requestOptions)
+    fetch(`${process.env.REACT_APP_APIURI}/api/user/like`, requestOptions)
       .then(response => response.json())
       .then(result => {
         if (result.error) {
@@ -73,7 +72,7 @@ const UserProfileCard = (props) => {
             />
             <div className="half-float-bottom">
               <img
-                src={user && user.avatar ? `${APIURL}/uploads/${user.avatar}` : avatar}
+                src={user && user.avatar ? `${process.env.REACT_APP_APIURI}/uploads/${user.avatar}` : avatar}
                 alt="profile-img"
                 className="img-thumbnail"
               />
@@ -87,12 +86,12 @@ const UserProfileCard = (props) => {
           <div className="panel-body text-center profile-footer">
             <div className="row-table">
               <div className="col-xs-4">
-                <button onClick={handleLike} type="button" class="btn btn-warning col-md-6 btn-sm">
+                <button onClick={handleLike} type="button" className="btn btn-warning col-md-6 btn-sm">
                   Like
                 </button>
               </div>
               <div className="col-xs-4">
-                <button onClick={handleDislike} type="button" class="btn btn-warning col-md-6 btn-sm">
+                <button onClick={handleDislike} type="button" className="btn btn-warning col-md-6 btn-sm">
                   Dislike
                 </button>
               </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { APIURL } from '../config';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Card from "./Cards";
@@ -17,7 +16,7 @@ const MyMatches = () => {
       headers: reqHeaders,
       redirect: 'follow',
     };
-    fetch(`${APIURL}/api/user/matches`, requestOptions)
+    fetch(`${process.env.REACT_APP_APIURI}/api/user/matches`, requestOptions)
       .then(response => response.json())
       .then(result => {
         if (result.error) {

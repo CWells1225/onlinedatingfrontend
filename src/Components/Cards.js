@@ -1,5 +1,4 @@
 import React from "react";
-import { APIURL } from '../config';
 import avatar from '../assets/images/avatar.png';
 
 const Card = (props) => {
@@ -16,7 +15,7 @@ const Card = (props) => {
             />
             <div className="half-float-bottom">
               <img
-                src={user && user.avatar ? `${APIURL}/uploads/${user.avatar}` : avatar}
+                src={user && user.avatar ? `${process.env.REACT_APP_APIURI}/uploads/${user.avatar}` : avatar}
                 alt="profile-img"
                 className="img-thumbnail"
               />

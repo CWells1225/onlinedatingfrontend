@@ -27,7 +27,7 @@ const SignIn = () => {
         redirect: 'follow',
         body
       };
-      fetch(`${APIURL}/api/login`, requestOptions)
+      fetch(`${process.env.REACT_APP_APIURI}/api/login`, requestOptions)
         .then(response => response.json())
         .then(result => {
           if (result.error) {

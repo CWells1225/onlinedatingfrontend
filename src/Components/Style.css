@@ -91,7 +91,7 @@
   margin: 0;
 }
 
-.row-table > [class*="col-"] {
+.row-table > [className*="col-"] {
   display: table-cell;
   float: none;
   table-layout: fixed;

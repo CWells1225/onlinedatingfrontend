@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { APIURL } from '../config';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import UserProfileCard from "./UserProfileCard";
@@ -18,7 +17,7 @@ const UserList = () => {
       headers: reqHeaders,
       redirect: 'follow',
     };
-    fetch(`${APIURL}/api/user/userList`, requestOptions)
+    fetch(`${process.env.REACT_APP_APIURI}/api/user/userList`, requestOptions)
       .then(response => response.json())
       .then(result => {
         if (result.error) {

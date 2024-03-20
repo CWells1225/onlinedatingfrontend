@@ -10,6 +10,7 @@ const About = () => {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
+    console.log(token)
     const reqHeaders = new Headers();
     reqHeaders.append("Content-Type", "application/json");
     reqHeaders.append("Authorization", `Bearer ${token}`);
@@ -18,7 +19,7 @@ const About = () => {
       headers: reqHeaders,
       redirect: 'follow',
     };
-    fetch(`${APIURL}/api/user/userData`, requestOptions)
+    fetch(`${process.env.REACT_APP_APIURI}/api/user/userData`, requestOptions)
       .then(response => response.json())
       .then(result => {
         if (result.error) {
