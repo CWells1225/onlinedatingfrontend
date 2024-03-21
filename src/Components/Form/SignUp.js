@@ -8,7 +8,7 @@ import lovebg from '../../assets/images/lovebg.jpg';
 
 
 const SignUp = (props) => {
-  console.log("props", props);
+ 
   const [formData, setFormData] = useState({ gender: 'male' });
 
   const handleChange = (e) => {
@@ -32,7 +32,7 @@ const SignUp = (props) => {
         redirect: 'follow',
         body
       };
-      console.log(process.env.REACT_APP_APIURI)
+      
       fetch(`${process.env.REACT_APP_APIURI}/api/register`, requestOptions)
         .then(response => response.json())
         .then(result => {
