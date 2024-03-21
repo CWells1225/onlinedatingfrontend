@@ -47,7 +47,7 @@ const About = () => {
                   <div className="col-md-3 about-profile-outer text-center">
                     <img
                       className="rounded-circle about-profile-img"
-                      src={user && user.avatar ? `${APIURL}/uploads/${user.avatar}` : avatar}
+                      src={user && user.avatar ? `${process.env.REACT_APP_APIURI}/uploads/${user.avatar}` : avatar}
                       alt="profile-img"
                     />
                   </div>

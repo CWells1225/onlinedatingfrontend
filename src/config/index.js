@@ -1,1 +1,1 @@
-module.exports.APIURL = "https://wheresinglesmeetbackend1.onrender.com";
+module.exports.REACT_APP_APIURI = "https://wheresinglesmeetbackend1.onrender.com";

@@ -46,7 +46,7 @@ const UserProfileCard = (props) => {
       redirect: 'follow',
       body
     };
-    fetch(`${APIURL}/api/user/dislike`, requestOptions)
+    fetch(`${process.env.REACT_APP_APIURI}/api/user/dislike`, requestOptions)
       .then(response => response.json())
       .then(result => {
         if (result.error) {
